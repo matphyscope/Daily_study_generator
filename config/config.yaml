@@ -1,6 +1,6 @@
 # Google Drive에 올려둔 PDF의 파일 ID
 # Drive에서 파일을 열었을 때 주소창의 https://drive.google.com/file/d/《여기부분》/view 를 복사하세요
-drive_file_id: "여기에_구글드라이브_파일ID_입력"
+drive_file_id: "1HD2v2gkJumrb_Fw31nKfop_Iz1X58ePv"
 
 # 이메일 제목 앞에 붙는 문구
 subject_prefix: "오늘의 공부"
