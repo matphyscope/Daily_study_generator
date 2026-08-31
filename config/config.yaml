@@ -5,16 +5,21 @@ drive_file_id: "여기에_구글드라이브_파일ID_입력"
 # 이메일 제목 앞에 붙는 문구
 subject_prefix: "오늘의 공부"
 
-# 챕터 목록: 제목과 PDF 페이지 범위(1부터 시작, 둘 다 포함)를 직접 지정합니다.
-# 자동으로 챕터를 인식하지 않고 사용자가 직접 나눠주는 방식이라, 어떤 PDF든 정확하게 동작합니다.
-chapters:
-  - title: "1장. 서론"
-    start_page: 1
-    end_page: 15
-  - title: "2장. 기본 개념"
-    start_page: 16
-    end_page: 34
-  - title: "3장. 심화 내용"
-    start_page: 35
-    end_page: 58
-  # 필요한 만큼 계속 추가하세요
+# 하루에 보낼 분량을 순서대로 나열합니다.
+# 정확히 페이지 수 절반이 아니라, "소단원 경계 중 중간 지점에 가장 가까운 곳"에서
+# 끊어서 글의 흐름이 어색하게 잘리지 않도록 구성했습니다.
+# start_page, end_page는 PDF 실제 페이지 번호 기준(1부터 시작, 둘 다 포함)입니다.
+sections:
+  - title: "1장 (1/2) - 1.1 Freezing, 1.2 Preparation"
+    start_page: 17
+    end_page: 29
+  - title: "1장 (2/2) - 1.3 Structure, 1.4 Glass Transition, 1.5 Applications"
+    start_page: 30
+    end_page: 48
+  - title: "2장 (1/2) - Amorphous Morphology 전반부"
+    start_page: 49
+    end_page: 75
+  - title: "2장 (2/2) - Amorphous Morphology 후반부"
+    start_page: 76
+    end_page: 101
+  # 3장부터는 find_sections.py 로 소단원 경계를 확인한 뒤 이어서 추가하세요
