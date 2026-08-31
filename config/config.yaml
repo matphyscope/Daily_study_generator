@@ -1,0 +1,20 @@
+# Google Drive에 올려둔 PDF의 파일 ID
+# Drive에서 파일을 열었을 때 주소창의 https://drive.google.com/file/d/《여기부분》/view 를 복사하세요
+drive_file_id: "여기에_구글드라이브_파일ID_입력"
+
+# 이메일 제목 앞에 붙는 문구
+subject_prefix: "오늘의 공부"
+
+# 챕터 목록: 제목과 PDF 페이지 범위(1부터 시작, 둘 다 포함)를 직접 지정합니다.
+# 자동으로 챕터를 인식하지 않고 사용자가 직접 나눠주는 방식이라, 어떤 PDF든 정확하게 동작합니다.
+chapters:
+  - title: "1장. 서론"
+    start_page: 1
+    end_page: 15
+  - title: "2장. 기본 개념"
+    start_page: 16
+    end_page: 34
+  - title: "3장. 심화 내용"
+    start_page: 35
+    end_page: 58
+  # 필요한 만큼 계속 추가하세요
